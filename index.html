@@ -41,19 +41,6 @@ padding:80px;
 font-size:50px;
 }
 
-/* Login Page */
-
-.login{
-display: none;
-margin: auto;
-margin-top:50px;
-background: white;
-color: black;
-width:300px;
-padding:30px;
-border-radius:20px;
-border:4px dashed hotlink;
-}
 
 /* Gallery Page */
 
@@ -127,32 +114,6 @@ background:#111;
 
 <script>
 
-/* navigation */
-
-function show Login(){
-document.getElementById("welcome").style. Display="none";
-document.getElementById("loginPage").style. Display="block";
-}
-
-/* login system */
-
-function login(){
-
-var pass=document.getElementById("password").value;
-
-if(pass=="1234"){
-
-document.getElementById("loginPage").style. Display="none";
-document.getElementById("galleryPage").style. Display="block";
-
-}
-
-else{
-alert("Wrong Password!");
-}
-
-}
-
 /* slideshow */
 
 var slideIndex=0;
@@ -190,7 +151,6 @@ window.onload=slideshow;
 <nav>
 
 <a href="#">Home</a>
-<a href="#" onclick="showLogin()">Login</a>
 <a href="#">Albums</a>
 <a href="#">Contact</a>
 
@@ -205,27 +165,7 @@ window.onload=slideshow;
 
 <p>Every photo tells a story and keeps memories alive </p>
 
-<button onclick="showLogin()">Enter Gallery</button>
-
 </div>
-
-
-<!-- Login Page -->
-
-<div id="loginPage" class="login">
-
-<h2>Login to Gallery</h2>
-
-<input type="password" id="password" placeholder="Enter Password">
-
-<br><br>
-
-<button onclick="login()">Login</button>
-
-<p>Hint password:1234 </p>
-
-</div>
-
 
 <!-- Gallery Page -->
 
